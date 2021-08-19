@@ -1,0 +1,55 @@
+{
+  "name": "easyapi-fapiao-console",
+  "version": "1.0.0",
+  "description": "EasyAPI发票服务控制台",
+  "author": "EasyAPI <leida@easyapi.com>",
+  "private": true,
+  "homepage": "https://fapiao.easyapi.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://codeup.aliyun.com/easyapi/easyapi/easyapi-fapiao-console.git"
+  },
+  "scripts": {
+    "dev": "nuxt --open",
+    "build": "nuxt build",
+    "start": "nuxt start --hostname 0.0.0.0 --port 8889",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint",
+    "pm2": "pm2 start npm --name 'easyapi-fapiao-console' -- run start"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.6",
+    "echarts": "^5.1.2",
+    "element-ui": "^2.15.5",
+    "v-distpicker": "^1.2.12",
+    "is-chinese-phone-number": "^0.1.9",
+    "isemail": "^3.2.0",
+    "js-cookie": "^3.0.0",
+    "js-cookies": "^1.0.4",
+    "nuxt": "^2.15.8",
+    "vue-quill-editor": "^3.0.6"
+  },
+  "devDependencies": {
+    "@nuxtjs/style-resources": "^1.2.1",
+    "@nuxtjs/eslint-config": "^6.0.1",
+    "@nuxtjs/eslint-module": "^3.0.2",
+    "@nuxtjs/proxy": "^2.1.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": ">=16.0.3",
+    "eslint-plugin-import": ">=2.24.0",
+    "eslint-plugin-jest": ">=24.4.0",
+    "eslint-plugin-node": ">=11.1.0",
+    "eslint-plugin-nuxt": ">=2.0.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-promise": ">=5.1.0",
+    "eslint-plugin-standard": ">=5.0.0",
+    "eslint-plugin-vue": "^7.16.0",
+    "node-sass": "^6.0.1",
+    "sass-loader": "^10.2.0",
+    "nodemon": "^2.0.12",
+    "prettier": "^2.3.2"
+  }
+}

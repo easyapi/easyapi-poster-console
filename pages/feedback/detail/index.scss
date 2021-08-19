@@ -1,0 +1,42 @@
+.feedback-content {
+  padding: 20px;
+  border: 1px solid #ddd;
+  width: 600px;
+
+  p {
+    line-height: 24px;
+  }
+}
+
+.feedback-imgs {
+  padding: 20px;
+  border: 1px solid #ddd;
+  width: 600px;
+  margin-top: 20px;
+
+  img {
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+  }
+
+  & > img:first-child {
+    margin-left: 0;
+  }
+}
+
+.feedback-popover {
+  .list {
+    padding: 6px 0;
+
+    .list-item {
+      padding: 6px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    & > .list-item:last-child {
+
+      border-bottom: none;
+    }
+  }
+}

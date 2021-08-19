@@ -1,0 +1,29 @@
+/* 除头部外页面宽度 */
+$-container-bgColor: #f4f4f4; //页面背景颜色
+$-container-width: 100%; //除头部外，页面宽度
+
+/* 顶部 */
+$-header-color: #fff; //字体颜色
+$-header-bgColor: #1ac1d6; //背景颜色
+
+/* 左侧菜单 */
+$-sidebar-top: 0; //上边距
+$-sidebar-left: 0; //左边距
+$-sidebar-bottom: 0; //下边距
+$-sidebar-radius: 0; //圆角
+$-sidebar-bgColor: #fff; //背景颜色
+$-menu-first-color: #808080; //一级菜单颜色
+$-menu-color: #1f2329; //菜单颜色
+$-menu-bgColor: #fff; //菜单背景颜色
+$-menu-hover-color: #18c1d6; //菜单划过颜色
+$-menu-hover-bgColor: #f2fbff; //菜单划过背景颜色
+$-menu-active-color: #18c1d6; //菜单选中颜色
+$-menu-active-bgColor: #f2fbff; //菜单选中背景颜色
+
+/* 右侧内容 */
+$-container-main-top: 10; //上边距
+$-container-main-left: 20; //左边距
+$-container-main-right: 20; //右边距
+$-container-main-bottom: 20; //下边距
+$-container-main-radius: 5; //圆角
+$-container-main-bgColor: #fff; //背景色
