@@ -1,16 +1,16 @@
 const routers = [
   {
-    title: '意见反馈',
+    title: '二维码海报',
     children: [
       {
-        title: '反馈列表',
-        path: '/feedback/list',
+        title: '海报记录',
+        path: '/base/posterRecord',
         icon: 'el-icon-s-help',
         children: []
       },
       {
-        title: '反馈设置',
-        path: '/feedback/setting',
+        title: '海报模板',
+        path: '/base/posterTemplate',
         icon: 'el-icon-s-help',
         children: []
       }
