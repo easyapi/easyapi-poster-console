@@ -21,10 +21,8 @@ export default {
   data() {
     return {
       posterTemplate: {},
-
       listWidth: 0,
       listHeight: 0,
-
       qnKey: '',
       qnToken: ''
     }
