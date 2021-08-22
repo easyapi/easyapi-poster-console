@@ -4,13 +4,13 @@ const routers = [
     children: [
       {
         title: '海报记录',
-        path: '/base/posterRecord',
+        path: '/record',
         icon: 'el-icon-s-help',
         children: []
       },
       {
         title: '海报模板',
-        path: '/base/posterTemplate',
+        path: '/template',
         icon: 'el-icon-s-help',
         children: []
       }

@@ -16,7 +16,3 @@ yarn.lock
 
 # Mac OSX
 .DS_Store
-
-# Aliyun FC
-.env
-.fun

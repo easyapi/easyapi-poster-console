@@ -1,0 +1,84 @@
+<div class='toolbar' @mousedown.stop>
+
+  <div class='toolbar-wh-row'>
+    <p class='toolbar-row-title'>参数名称</p>
+    <span class='toolbar-size-inp'>
+            <input :value='name' @keyup='changeName' />
+        </span>
+  </div>
+
+  <div class='toolbar-wh-row'>
+    <p class='toolbar-row-title'>圆角半径</p>
+    <span class='toolbar-size-inp'>
+            <input :value='radius' @keyup='changeRadius' />
+        </span>
+  </div>
+
+  <div class='toolbar-wh-row'>
+    <p class='toolbar-row-title'>位置</p>
+    <span class='toolbar-position-inp'>
+            <span class='weizhi'>X轴</span>
+            <input :value='left' @keyup='changeLeft' />
+        </span>
+    <span class='toolbar-position-inp'>
+            <span class='weizhi'>Y轴</span>
+            <input :value='top' @keyup='changeTop' />
+        </span>
+  </div>
+  <div class='toolbar-wh-row'>
+    <p class='toolbar-row-title'>大小</p>
+    <span class='toolbar-size-inp'>
+            <span class='weizhi'>宽</span>
+            <input :value='width' @keyup='changeWidth' />
+        </span>
+    <span class='toolbar-size-inp'>
+            <span class='weizhi'>高</span>
+            <input :value='height' @keyup='changeHeight' />
+        </span>
+  </div>
+
+  <div class='toolbar-wh-row'>
+    <p class='toolbar-row-title'>文字</p>
+    <span class='word1'>
+            <textarea :value='word' @keyup='changeWord' class='textarea'></textarea>
+        </span>
+  </div>
+
+  <div class='toolbar-wh-row'>
+    <p class='toolbar-row-title'>文字样式</p>
+    <span class='word'>
+
+            <div class='xuanze'>
+                <el-select v-model='font' placeholder='请选择' size='mini' @change='changeFont'>
+                    <el-option v-for='item in options' :key='item.value' :label='item.label' :value='item.value'>
+                    </el-option>
+                </el-select>
+            </div>
+            <div class='xuanze'>
+                <el-select v-model='size' placeholder='请选择' size='mini' @change='changeSize'>
+                    <el-option v-for='item in options1' :key='item.value' :label='item.label' :value='item.value'>
+                    </el-option>
+                </el-select>
+            </div>
+
+
+            <el-button size='mini' @click='changeBold'>加粗</el-button>
+            <el-button size='mini' @click='changeItalic'>斜体</el-button>
+            <el-color-picker v-model='color' @change='changeColor'></el-color-picker>
+        </span>
+  </div>
+
+  <div class='toolbar-wh-row'>
+    <p class='toolbar-row-title'>设置</p>
+    <label class='toolbar-check-inp'><input type='checkbox' @change='toggleResizable' :checked='resizable'
+                                            :disabled='activeRect === null' /> 是否缩放</label>
+    <label class='toolbar-check-inp'><input type='checkbox' @change='toggleDraggable' :checked='draggable'
+                                            :disabled='activeRect === null' /> 是否拖拽</label>
+    <label class='toolbar-check-inp'><input type='checkbox' @change='toggleSnapToGrid' :checked='snapToGrid'
+                                            :disabled='activeRect === null' /> 运动方式</label>
+  </div>
+
+  <div class='toolbar-wh-row'>
+    <el-button type='danger' icon='el-icon-delete' @click='deletePhoto'>删除</el-button>
+  </div>
+</div>

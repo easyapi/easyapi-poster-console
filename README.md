@@ -1,7 +1,7 @@
-# EasyAPI发票服务[https://fapiao.easyapi.com](https://fapiao.easyapi.com)
+# EasyAPI二维码海报[https://poster.easyapi.com](https://poster.easyapi.com)
 
 ## 项目介绍
-EasyAPI发票服务控制台
+EasyAPI二维码海报控制台
 
 ## 相关技术和第三方库
 * [Nuxt](https://zh.nuxtjs.org)
