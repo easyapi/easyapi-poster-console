@@ -16,13 +16,14 @@
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint",
-    "pm2": "pm2 start npm --name 'easyapi-poster-console' -- run start"
+    "pm2": "pm2 delete easyapi-poster-console \n pm2 start npm --name 'easyapi-poster-console' -- run start"
   },
   "dependencies": {
     "nuxt": "^2.15.8",
     "@nuxtjs/axios": "^5.13.6",
     "element-ui": "^2.15.5",
-    "js-cookie": "^3.0.0"
+    "js-cookie": "^3.0.0",
+    "vue-contextmenu": "^1.5.10"
   },
   "devDependencies": {
     "@nuxtjs/style-resources": "^1.2.1",
@@ -33,14 +34,14 @@
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-standard": ">=16.0.3",
-    "eslint-plugin-import": ">=2.24.1",
+    "eslint-plugin-import": ">=2.24.2",
     "eslint-plugin-jest": ">=24.4.0",
     "eslint-plugin-node": ">=11.1.0",
     "eslint-plugin-nuxt": ">=2.0.0",
     "eslint-plugin-prettier": "^3.4.1",
     "eslint-plugin-promise": ">=5.1.0",
     "eslint-plugin-standard": ">=5.0.0",
-    "eslint-plugin-vue": "^7.16.0",
+    "eslint-plugin-vue": "^7.17.0",
     "node-sass": "^6.0.1",
     "sass-loader": "^10.2.0",
     "nodemon": "^2.0.12",

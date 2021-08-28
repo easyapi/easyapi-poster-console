@@ -8,37 +8,23 @@
       <div>
         <el-dropdown trigger='click' @command='handleCommand'>
           <span class='el-dropdown-link'>
-            <el-avatar
-              src='https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png'
-            ></el-avatar>
+            <el-avatar src='https://qiniu.easyapi.com/user/default.jpg'></el-avatar>
           </span>
           <el-dropdown-menu slot='dropdown'>
-            <el-dropdown-item command='changePassword' icon='el-icon-edit'>修改密码</el-dropdown-item>
-            <el-dropdown-item command='changeShop' icon='el-icon-sort'
-            >切换企业
-            </el-dropdown-item
-            >
-            <el-dropdown-item command='quitLogin' icon='el-icon-switch-button'
-            >退出
-            </el-dropdown-item
-            >
+            <el-dropdown-item command='quitLogin' icon='el-icon-switch-button'>退出</el-dropdown-item>
           </el-dropdown-menu>
         </el-dropdown>
       </div>
     </div>
-    <Password ref='password'></Password>
   </div>
 </template>
 
 <script>
-import Password from '../Password/index'
 import Cookies from 'js-cookie'
 
 export default {
   name: 'Header',
-  components: {
-    Password
-  },
+  components: {},
   data() {
     return {
       title: '',
@@ -48,11 +34,7 @@ export default {
   },
   methods: {
     handleCommand(command) {
-      if (command === 'changePassword') {
-        this.$refs.password.modal = true
-      } else if (command === 'changeShop') {
-        this.$router.push(`/change-shop`)
-      } else if (command === 'quitLogin') {
+      if (command === 'quitLogin') {
         Cookies.remove('fpAuthToken', 'userInfo')
         this.$router.push(`/login`)
       }
@@ -84,6 +66,11 @@ export default {
   .logo {
     display: flex;
     align-items: center;
+
+    img {
+      width: 26px;
+      height: 26px;
+    }
   }
 
   p {

@@ -26,6 +26,9 @@ module.exports = {
    ** Customize the progress bar color
    */
   modules: ['@nuxtjs/axios', '@nuxtjs/style-resources'],
+  router: {
+    base: '/console/'
+  },
   axios: {},
   loading: {
     color: '#18c1d6',
